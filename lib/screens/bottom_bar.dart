@@ -14,6 +14,17 @@ class _BottomBarState extends State<BottomBar> {
       appBar: AppBar(
         title: Text('My tickets'),
       ),
+      body: Center(
+        child: Text('My body'),
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        items: [
+          BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
+          BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
+          BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
+          BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
+        ],
+      ),
     );
   }
 }
