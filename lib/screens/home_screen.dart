@@ -6,6 +6,7 @@ import 'package:food_app/screens/search_screen.dart';
 import 'package:food_app/screens/ticket_view.dart';
 import 'package:food_app/utils/app_info_list.dart';
 import 'package:food_app/utils/app_styles.dart';
+import 'package:food_app/widgets/double_text_widget.dart';
 import 'package:gap/gap.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -72,25 +73,8 @@ class HomeScreen extends StatelessWidget {
                   ),
                 ),
                 const Gap(40),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Text(
-                      'Upcoming Flights',
-                      style: Styles.headStyle2,
-                    ),
-                    InkWell(
-                      onTap: () {
-                        print('You are');
-                      },
-                      child: Text(
-                        'View all',
-                        style: Styles.textStyle
-                            .copyWith(color: Styles.primaryColor),
-                      ),
-                    ),
-                  ],
-                ),
+                AppDoubleTextWidget(
+                    bigText: 'Upcoming Flights', smallText: 'Viewall'),
               ],
             ),
           ),
@@ -105,25 +89,7 @@ class HomeScreen extends StatelessWidget {
           const Gap(15),
           Container(
             padding: EdgeInsets.symmetric(horizontal: 20),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Text(
-                  'Hotels',
-                  style: Styles.headStyle2,
-                ),
-                InkWell(
-                  onTap: () {
-                    print('You are');
-                  },
-                  child: Text(
-                    'View all',
-                    style:
-                        Styles.textStyle.copyWith(color: Styles.primaryColor),
-                  ),
-                ),
-              ],
-            ),
+            child: AppDoubleTextWidget(bigText: 'Hotels', smallText: 'Viewall'),
           ),
           Gap(15),
           SingleChildScrollView(

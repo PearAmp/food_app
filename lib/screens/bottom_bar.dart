@@ -4,6 +4,7 @@ import 'package:fluentui_icons/fluentui_icons.dart';
 import 'package:flutter/material.dart';
 import 'package:food_app/screens/home_screen.dart';
 import 'package:food_app/screens/search_screen.dart';
+import 'package:food_app/screens/ticket_screen.dart';
 
 class BottomBar extends StatefulWidget {
   const BottomBar({Key? key}) : super(key: key);
@@ -18,7 +19,7 @@ class _BottomBarState extends State<BottomBar> {
     //show Page On Tab
     HomeScreen(),
     SearchScreen(),
-    const Text('Tickets'),
+    TicketScreen(),
     const Text('Profile')
   ];
   void _onItemTapped(int index) {
@@ -40,7 +41,7 @@ class _BottomBarState extends State<BottomBar> {
         elevation: 10,
         showSelectedLabels: false,
         showUnselectedLabels: false,
-        selectedItemColor: Colors.blueGrey,
+        selectedItemColor: Color(0xFF687daf),
         type: BottomNavigationBarType.fixed,
         unselectedItemColor: const Color(0xFF526480),
         items: [

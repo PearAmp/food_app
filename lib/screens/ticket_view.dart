@@ -6,7 +6,10 @@ import 'package:gap/gap.dart';
 
 class TicketView extends StatelessWidget {
   final Map<String, dynamic> ticket;
-  const TicketView({Key? key, required this.ticket}) : super(key: key);
+  const TicketView({
+    Key? key,
+    required this.ticket,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

@@ -21,6 +21,6 @@ class AppLayout {
 
   static getWidth(double pixels) {
     double x = getScreenWidth() / pixels;
-    return getScreenHeight() / x;
+    return getScreenWidth() / x;
   }
 }
